@@ -1,0 +1,4 @@
+/* Smooth transition for menu height and opacity */
+#mainMenu {
+    transition-property: max-height, opacity;
+}
