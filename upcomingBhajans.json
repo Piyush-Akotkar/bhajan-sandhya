@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Bhajan Sandhya Special Night",
+    "date": "2025-08-17",
+    "time": "18:00",
+    "venue": "Yerwada, Pune, Maharashtra.",
+    "description": "Join us for an evening of divine melodies, soulful singing, and vibrant community spirit!",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3782.517761292744!2d73.88242007519244!3d18.550681982548728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMzJzAyLjUiTiA3M8KwNTMnMDYuMCJF!5e0!3m2!1sen!2sin!4v1755421437188!5m2!1sen!2sin",
+    "highlight": true
+  },
+  {
+    "id": 2,
+    "title": "Shravan Mahotsav Bhajan",
+    "date": "2025-08-24",
+    "time": "19:00",
+    "venue": "Hall B, Community Center, Wakad",
+    "description": "Celebrate Shravan with devotional tunes and community gathering.",
+    "mapLink": "https://maps.google.com/maps?q=Community%20Center%20Wakad&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    "highlight": false
+  },
+  {
+    "id": 3,
+    "title": "Janmashtami Bhajan Utsav",
+    "date": "2025-08-30",
+    "time": "20:00",
+    "venue": "Lotus Park, Pimple Saudagar",
+    "description": "Special bhajans for Janmashtami festival.",
+    "mapLink": "https://maps.google.com/maps?q=Lotus%20Park%20Pimple%20Saudagar&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    "highlight": false
+  }
+]
