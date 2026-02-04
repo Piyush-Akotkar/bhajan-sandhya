@@ -23,6 +23,11 @@ function renderBhajans(bhajans) {
         `;
         list.appendChild(li);
     });
+
+    const hero = document.querySelector('.hero-section');
+    if (hero) {
+        hero.style.display = bhajans.length === allBhajans.length ? 'block' : 'none';
+    }
 }
 
 // Fetch and setup search
