@@ -149,6 +149,22 @@
         <p>&copy; 2025 Bhajan Sandhya. All rights reserved.</p>
     </footer>
 
+    <script>
+        if ('serviceWorker' in navigator && 'caches' in window) {
+            caches.match('/bhajans.json').then(response => {
+                if (response) {
+                    response.json().then(bhajans => {
+                        // Load bhajan from cache
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const id = parseInt(urlParams.get('id'));
+                        const bhajan = bhajans.find(b => b.id === id);
+                        if (bhajan) displayBhajan(bhajan);
+                    });
+                }
+            });
+        }
+    </script>
+
 </body>
 
 </html>
