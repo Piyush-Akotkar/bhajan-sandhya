@@ -101,6 +101,7 @@ function renderBhajans(bhajans, isSearching) {
             </a>
         `;
         list.appendChild(li);
+        li.addEventListener('click', () => trackBhajanView(bhajan.title));
     });
 
     const hero = document.querySelector('.hero-section');
@@ -161,4 +162,14 @@ if ('serviceWorker' in navigator) {
             .then(registration => console.log('SW registered'))
             .catch(error => console.log('SW registration failed'));
     });
+}
+
+// Track bhajan page views
+function trackBhajanView(bhajanTitle) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'bhajan_view', {
+            'bhajan_title': bhajanTitle,
+            'bhajan_id': bhajan.id
+        });
+    }
 }
